@@ -1,0 +1,49 @@
+div{
+    color: yellow;
+    font-style: normal;
+    position: static;
+    font-size: 1cm;
+}
+body{
+    background-color: black;
+}
+#rectangle{
+    width: 400px;
+    height: 500px;
+    background: yellow;
+    position: absolute;
+    margin-right: 10mm;
+    margin-left: 100mm;
+}
+#input{
+    position: absolute;
+    margin-top: 130mm;
+    margin-right: 10mm;
+    margin-left: 130mm;
+    font-style: italic;
+}
+#dropname{
+    position: absolute;
+    margin-top: -5mm;
+    margin-right: 10mm;
+    margin-left: 129mm;
+    font-size: 8mm;
+    font-style: bold;
+    font-weight: bolder;
+}
+#scoreId{
+    position: absolute;
+    margin-top: -7mm;
+    margin-right: 10mm;
+    margin-left: 102mm;
+    font-size: 5mm;
+    font-style: bold;
+    font-weight: bolder;
+}
+#buttonStart{
+    position: absolute;
+    width: 200px;
+    font-size: .5cm;
+    left: 50px;
+    top: 75px;
+}
