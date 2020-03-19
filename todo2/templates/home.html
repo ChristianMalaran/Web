@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="{% url 'insert_list' %}" method="post">
+        {% csrf_token %}
+        <input type="text" name="content"><br>
+        <input type="submit">
+    </form>
+    <ul>
+        {% for todo in todo_list %}
+        <li>
+            <i>
+                {{todo.content}}
+                <form action="{% url 'delete_list' todo.id %}">
+                    <button type="submit">Delete</button>
+                </form>
+            </i>
+        </li>
+        {% endfor %}
+    </ul>
+    <h1>{{deleted}}</h1>
+</body>
+</html>
